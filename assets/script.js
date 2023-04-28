@@ -1,6 +1,7 @@
 var myButton = document.getElementById("Button");
 var startContainer = document.querySelector(".startContainer");
 var quizArea = document.querySelector(".quizArea");
+//var user =
 
 quizArea.style.display = "none";
 
@@ -39,9 +40,11 @@ function startQuiz() {
   quizArea.style.display = "block";
   renderQuestion();
   startTimer();
-  
-  //stop timer
 }
+
+// function displayMessage(){
+//     var score = 
+// }
 
 function startTimer() {
   var timeInterval = setInterval(function () {
@@ -61,6 +64,7 @@ quizArea.addEventListener("click", function (event) {
     }
     questionIndex++;
     renderQuestion();
+    // clearInterval(setInterval);
   }
 });
 
